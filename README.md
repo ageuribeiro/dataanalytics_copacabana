@@ -1,7 +1,7 @@
 # 📊 Análise de Dados - Copacabana
 
 ## 📌 Sobre
-Este projeto realiza uma análise exploratória de dados sobre a região de Copacabana, com foco em identificar padrões, tendências e gerar visualizações.
+Este projeto implementa um **pipeline ETL** para processar e analisar dados do Airbnb em Copacabana, gerando datasets limpos e visualizações exploratórias.
 
 ## 🛠️ Tecnologias
 
@@ -13,11 +13,11 @@ Este projeto realiza uma análise exploratória de dados sobre a região de Copa
 
 ## 📂 Estrutura
 
-|---- dados/
+|---- dados/ # Dados originais (não versionados), dados tratados pelo ETL
 |---- docker/
-|---- logs/
-|---- notebooks/
-|---- scripts/
+|---- logs/ # logs de pipeline
+|---- notebooks/  # análises exploratórias e gráficos
+|---- scripts/ # scripts Python(extrai, transformar, carregar, etl.py)
 |---- .gitignore
 |---- LICENSE
 |---- README.md
@@ -26,6 +26,7 @@ Este projeto realiza uma análise exploratória de dados sobre a região de Copa
 ## ⚙️ Como Executar
 
 1️⃣ Clonar repositório
+
 ```bash
 git clone https://github.com/ageuribeiro/dataanalytics_copacabana.git
 cd dataanalytics_copacabana
